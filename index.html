@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Food Order - India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🍽️ Online Food Order</h1>
+
+  <div class="container">
+
+    <div class="customer-info">
+      <h3>Customer Details</h3>
+      <input type="text" id="customer-name" placeholder="Your Name" required><br>
+      <input type="text" id="customer-phone" placeholder="Phone Number" required><br>
+    </div>
+
+    <div class="main-content">
+      <div class="menu">
+        <h2>Menu</h2>
+        <div id="food-menu"></div>
+      </div>
+
+      <div class="order">
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+        <p id="total-price">Total: ₹0.00</p>
+        <button onclick="clearOrder()">Clear Order</button>
+      </div>
+    </div>
+
+    <div class="summary">
+      <h2>Order Summary</h2>
+      <p id="summary-details">No order yet.</p>
+      <button onclick="placeOrder()">Place Order</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
